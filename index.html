@@ -4,7 +4,18 @@
 		<meta charset="utf-8" />
 		<title></title>
 	</head>
-	<body>
-		
+	<body style="text-align: center;">
+		<input type="text" id="val" />
+		<button onclick="reg()"> test </button>
 	</body>
+	<script type="text/javascript">
+		function reg(){
+			var val = document.getElementById("val");
+			var pat = /^(\d{3,4}-?)?\d{7,8}$/;
+			var pat2 = /^\d{7,8}$/;
+			var pat3 = /^,+$/;
+			alert(pat3.test(val.value));
+		}
+		console.log("asdfasdf?jkhk=sdf".substr(0,"asdfasdf?jkhk=sdf".indexOf('?')))
+	</script>
 </html>
